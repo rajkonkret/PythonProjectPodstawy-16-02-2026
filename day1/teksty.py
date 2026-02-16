@@ -49,3 +49,32 @@ print(type(encode_s))  # <class 'bytes'>, typ bajtowy
 # \x - dane w systemie szesnatkowym
 
 print(encode_s.decode('utf-8'))  # Witaj Świecie
+
+imie = "Radek"
+print(len(imie))  # długość tekstu 5
+
+# f - string, wstrzykiwanie zmiennych do tekstu, {}
+tekst_format = f"\tMam na imię {imie}\n i lubię Pythona.\b"
+print(tekst_format)
+# "   Mam na imię Radek
+#  i lubię Pythona"
+# \t - tabulator
+# \n - nowa linia
+# \b - backspace
+
+starszy = "Witaj %s!"  # %s - string
+print(starszy % imie)  # Witaj Radek!
+
+print("Witaj {}!".format("Radek"))  # Witaj Radek!
+print(f"Witaj {imie}!")  # Witaj Radek!
+
+print("Witaj", imie)  # Witaj Radek
+
+print("""Tekst
+    wielolinijkowy""")
+# "Tekst
+#     wielolinijkowy"
+
+# komentarz traktowany jako dokumentacja (docstring)
+"""Komentarz
+    wielolinijkowy"""
