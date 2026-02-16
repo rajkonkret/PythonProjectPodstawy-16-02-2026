@@ -79,3 +79,4 @@ print(168 * 35)  # 5880
 # ctrl d - powielanie linii
 print(168 * "35")  # powiela tekst
 print(168 * "35")  # powiela tekst
+# ctrl alt l - formatowanie
