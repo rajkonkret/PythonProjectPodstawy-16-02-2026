@@ -142,4 +142,25 @@ print(id(lista))  # 2301426388928
 print(id(lista2))  # 2301426388928
 print(id(lista_copy))  # 2301429354368
 
+liczby = [54, 999, 12.34, 34, 567, 999]
+print(liczby)  # [54, 999, 12.34, 34, 567, 999]
+print(type(liczby))  # <class 'list'>
 
+liczby.sort()  # zmienia oryginalną listę
+print(liczby)  # [12.34, 34, 54, 567, 999, 999]
+
+liczby = [54, 999, 12.34, 34, 567, 999, "A"]
+# liczby.sort() # TypeError: '<' not supported between instances of 'str' and 'int'
+
+print(ord("A"))  # kod znaku, 65
+# print(ord("AB"))  # TypeError: ord() expected a character, but string of length 2 found
+
+print(lista_copy)  # ['Radek', 'Ola', 'Anna']
+lista_copy.sort()
+print(lista_copy)  # ['Anna', 'Ola', 'Radek']
+
+lista_copy.sort(reverse=True)  # sortowanie i odwróćenie
+print(lista_copy)  # ['Radek', 'Ola', 'Anna']
+
+lista_copy.reverse()  # tylko odwracanie
+print(lista_copy) # ['Anna', 'Ola', 'Radek']
