@@ -163,4 +163,9 @@ lista_copy.sort(reverse=True)  # sortowanie i odwróćenie
 print(lista_copy)  # ['Radek', 'Ola', 'Anna']
 
 lista_copy.reverse()  # tylko odwracanie
-print(lista_copy) # ['Anna', 'Ola', 'Radek']
+print(lista_copy)  # ['Anna', 'Ola', 'Radek']
+
+liczby[3] = 666  # nadpisanie elementu
+print(liczby[0:3])  # [54, 999, 12.34]
+print(liczby[-3])  # 567
+print(liczby)  # [54, 999, 12.34, 666, 567, 999, 'A']
