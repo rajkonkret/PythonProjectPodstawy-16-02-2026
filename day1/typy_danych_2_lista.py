@@ -93,3 +93,27 @@ print(lista)  # ['Radek', 'Ola', 'Tomek', 'Marek', 'Asia', 'Anna', 'Magda']
 lista_darek = []
 lista_darek.insert(1, "Darek")
 print(lista_darek)  # ['Darek'] indeks 0
+
+# usunięcie elementu z listy, po elemencie, pierwszy napotkany
+lista.remove("Tomek")
+print(lista)  # ['Radek', 'Ola', 'Marek', 'Asia', 'Anna', 'Magda']
+
+# dodajmey element, który już jest na liście,
+lista.append("Marek")
+print(lista)  # ['Radek', 'Ola', 'Marek', 'Asia', 'Anna', 'Magda', 'Marek']
+lista.remove("Marek")
+print(lista)  # ['Radek', 'Ola', 'Asia', 'Anna', 'Magda', 'Marek']
+
+# usunięcie po indeksie, zwraca usunięty element
+# pop()
+print(lista.pop(2))  # Asia
+zmienna = lista.pop(-1)
+print(zmienna)  # Marek
+print(lista)  # ['Radek', 'Ola', 'Anna', 'Magda']
+
+print(lista.pop())  # Magda, usunie ostatni element
+
+print(lista)  # ['Radek', 'Ola', 'Anna']
+
+# sprawdzenie indexu dla danego eleemntu, pierwszy napotkany
+print(lista.index("Ola"))  # index 1
