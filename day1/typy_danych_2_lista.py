@@ -169,3 +169,20 @@ liczby[3] = 666  # nadpisanie elementu
 print(liczby[0:3])  # [54, 999, 12.34]
 print(liczby[-3])  # 567
 print(liczby)  # [54, 999, 12.34, 666, 567, 999, 'A']
+
+# tworzymy liste: list(), []
+tekst = "Pyth on."
+
+lista = [tekst]
+print(type(lista))  # <class 'list'>
+print(lista)  # ['Pyth on.']
+
+# rozpakowanie sekwencji
+pusta_lista = list(tekst)
+print(pusta_lista)  # ['P', 'y', 't', 'h', ' ', 'o', 'n', '.']
+print(type(pusta_lista))  # <class 'list'>
+
+# tworzenie krotki (tupli) z listy
+krotka = tuple(lista_copy)
+print(type(krotka))  # <class 'tuple'>
+print(krotka)  # ('Anna', 'Ola', 'Radek')
