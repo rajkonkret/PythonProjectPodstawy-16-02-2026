@@ -95,3 +95,16 @@ print(30 * "-")
 # not - negacja
 print(not True)  # False
 print(not False)  # True
+
+a = 6
+b = 8
+
+print(f"Porównanie {a} > {b} = {a > b}")  # Porównanie 6 > 8 = False
+print(f"Porównanie {a} < {b} = {a < b}")  # Porównanie 6 < 8 = True
+print(f"Porównanie {a} >= {b} = {a >= b}")  # Porównanie 6 >= 8 = False
+print(f"Porównanie {a} <= {b} = {a <= b}")  # Porównanie 6 <= 8 = True
+
+print(f"Porównanie { a <= b = }")  # Porównanie  a <= b = True
+
+print(f"Porównanie {a} == {b} = {a == b}")  # czy są równe? Porównanie 6 == 8 = False
+print(f"Porównanie {a} != {b} = {a != b}")  # czy są różne? Porównanie 6 != 8 = True
