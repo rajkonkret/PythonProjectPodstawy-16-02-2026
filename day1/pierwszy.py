@@ -80,3 +80,4 @@ print(168 * 35)  # 5880
 print(168 * "35")  # powiela tekst
 print(168 * "35")  # powiela tekst
 # ctrl alt l - formatowanie
+# Alt Shift E - uruchamianie fragmentu kodu
