@@ -54,9 +54,12 @@ print(name)  # Radek
 print(type(name))  # <class 'str'>
 print(name + "Kowalski")  # RadekKowalski
 
+# podpowiedzi typów
 name: str = "Radek"
 print(name)
 name = 90
 print(name)
 # Radek
 # 90
+
+# mypy - sprawdzanie typów
