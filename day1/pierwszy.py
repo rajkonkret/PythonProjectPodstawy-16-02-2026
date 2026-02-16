@@ -63,3 +63,19 @@ print(name)
 # 90
 
 # mypy - sprawdzanie typów
+# pip
+# pip install mypy
+# PythonProjectPodstawy-16-02-2026>
+# cd day1 przejscie do katalogu
+# mypy .\pierwszy.py
+# (.venv) PS C:\Users\CSComarch\PycharmProjects\PythonProjectPodstawy-16-02-2026\day1> mypy .\pierwszy.py
+# pierwszy.py:52: error: Incompatible types in assignment (expression has type "str", variable has type "int")  [assignment]
+# pierwszy.py:55: error: Unsupported operand types for + ("int" and "str")  [operator]
+# pierwszy.py:58: error: Name "name" already defined on line 47  [no-redef]
+# Found 3 errors in 1 file (checked 1 source file)
+
+print(4 * "Radek")  # RadekRadekRadekRadek
+print(168 * 35)  # 5880
+# ctrl d - powielanie linii
+print(168 * "35")  # powiela tekst
+print(168 * "35")  # powiela tekst
