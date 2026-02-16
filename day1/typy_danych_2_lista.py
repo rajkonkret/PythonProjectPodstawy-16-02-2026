@@ -43,3 +43,22 @@ print(lista[-3])  # Zenek
 # ['Radek', 'Tomek', 'Marek', 'Zenek', 'Anna', 'Magda']
 #      0        1        2       3        4       5
 #      -6       -5       -4       -3      -2      -1
+
+# slicowanie - fragment listy
+print(lista[0:3])  # ['Radek', 'Tomek', 'Marek'],indeksy: 012, z prawej zbiór otwarty
+print(lista[:3])  # ['Radek', 'Tomek', 'Marek']
+
+print(lista[2:])  # ['Marek', 'Zenek', 'Anna', 'Magda'], z ostatnim włącznie
+print(lista[2:5])  # ['Marek', 'Zenek', 'Anna'], bez ostatniego
+
+print(lista[2:9])  # ['Marek', 'Zenek', 'Anna', 'Magda']
+
+print(lista[12:26])  # []
+
+print(lista[:])  # ['Radek', 'Tomek', 'Marek', 'Zenek', 'Anna', 'Magda']
+
+# ['Radek', 'Tomek', 'Marek', 'Zenek', 'Anna', 'Magda']
+#      0        1        2       3        4       5
+#      -6       -5       -4       -3      -2      -1
+print(lista[-2:0])  # [] -> [4:0]
+print(lista[0:-2])  # ['Radek', 'Tomek', 'Marek', 'Zenek'] -> [0:4]
