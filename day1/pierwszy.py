@@ -39,3 +39,24 @@ print(int("39"))  # rzutowanie na liczbę cąlkowita, int
 print(39 + int("39"))  # 78
 
 print("39" + str(39))  # 3939
+
+# zmienna
+# pudełko na dane
+
+# typowanie dynamiczne
+name = 90
+print(name)  # 90
+print(type(name))  # <class 'int'>
+# print(name + "Kowalski")
+
+name = "Radek"
+print(name)  # Radek
+print(type(name))  # <class 'str'>
+print(name + "Kowalski")  # RadekKowalski
+
+name: str = "Radek"
+print(name)
+name = 90
+print(name)
+# Radek
+# 90
