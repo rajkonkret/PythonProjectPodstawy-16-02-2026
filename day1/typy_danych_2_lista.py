@@ -186,3 +186,8 @@ print(type(pusta_lista))  # <class 'list'>
 krotka = tuple(lista_copy)
 print(type(krotka))  # <class 'tuple'>
 print(krotka)  # ('Anna', 'Ola', 'Radek')
+
+# https://naukapythona.com.pl/
+# https://www.w3schools.com/python/
+# https://www.hackerrank.com/domains/python
+# https://pl.altapps.net/soft/hackerrank-com
