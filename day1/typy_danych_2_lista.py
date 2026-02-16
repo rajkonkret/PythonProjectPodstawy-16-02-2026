@@ -88,3 +88,8 @@ print(lista)  # ['Radek', 'Tomek', 'Marek', 'Asia', 'Anna', 'Magda']
 # wstawienie elementu na wskazanym indeksie, pomiędzy inne elementy
 lista.insert(1, "Ola")
 print(lista)  # ['Radek', 'Ola', 'Tomek', 'Marek', 'Asia', 'Anna', 'Magda']
+
+# insert gdy tablica pusta
+lista_darek = []
+lista_darek.insert(1, "Darek")
+print(lista_darek)  # ['Darek'] indeks 0
