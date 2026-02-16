@@ -34,3 +34,23 @@ print(y)  # 4
 z = round(x, 2)
 print(f'{z=}')  # z=3.88
 print(type(z))  # <class 'float'>
+
+print(f"Używam pythona w wersji {wersja}")  # Używam pythona w wersji 3.900001
+print(f"Używam pythona w wersji {wersja:.2f}")  # Używam pythona w wersji 3.90
+print(f"Używam pythona w wersji {wersja:.1f}")  # Używam pythona w wersji 3.9
+print(f"Używam pythona w wersji {wersja:.0f}")  # Używam pythona w wersji 4
+
+print(f"{user:<10}")  # "Tomek     "
+print(f"{user:>20}")  # "               Tomek"
+print(f"{user:^25}")  # "          Tomek          "
+print(f"{user:.^25}")  # "..........Tomek.........."
+
+print(liczba)  # 908789876564321123
+print(f"Nasza duża liczba: {liczba:,}")  # Nasza duża liczba: 908,789,876,564,321,123
+print(f"Nasza duża liczba: {liczba:_}")  # Nasza duża liczba: 908_789_876_564_321_123
+print(f"Nasza duża liczba: {liczba:_}".replace("_", " "))  # Nasza duża liczba: 908 789 876 564 321 123
+print(f"Nasza duża liczba: {liczba:_}".replace("_", "."))  # Nasza duża liczba: 908.789.876.564.321.123
+
+liczba = 15_000_000_000_000
+print(liczba)  # 15000000000000
+print(type(liczba))  # <class 'int'>
