@@ -62,3 +62,19 @@ if n > 3:
 # walrus operator, operator morsa
 if (n := len(a)) > 3:
     print(f"Długość wynosi: {n}, więcej niż 3")
+
+podatek = 0
+zarobki = int(input('Podaj zarobki:'))
+
+if zarobki < 10_000:
+    podatek = 0
+# elif  10000 <= zarobki < 40000:
+elif zarobki < 40_000:
+    podatek = 0.2
+elif zarobki < 100_000:
+    podatek = 0.4
+else:  # od 100_000
+    podatek = 0.9
+
+print(f"podatek wynosi: {zarobki * podatek} pln.")
+# dodać podatek 20%, dla zarobków od 10000 do 39999
