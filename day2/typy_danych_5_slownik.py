@@ -47,3 +47,6 @@ print(dictionary['Imie'.lower()])  # ['Radek', 'Tomek', 'Magda']
 
 print(dictionary.get("Imie"))  # None
 print(dictionary.get("Imie", "default"))  # default
+
+name1 = "GROSS"
+name2 = "groẞ"
