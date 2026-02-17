@@ -102,32 +102,63 @@ print(f"Rabat wynosi: {rabat}")  # Rabat wynosi: 25
 # spam /= 1    spam = spam / 1
 # spam %= 1    spam = spam % 1
 
-punkty = 0
-odp = input("Podaj rok Chrztu Polski: ")
-if odp.strip().casefold() == '966':
-    print("Odpowiedż prawidłowa")
-    # punkty = punkty + 1
-    punkty += 1
-else:
-    print("Doucz się!")
-
-odp = input("Podaj stolicę Polski: ")
-if odp.strip().casefold() == 'Warszawa'.casefold():
-    print("Odpowiedż prawidłowa")
-    punkty += 1
-else:
-    print("Doucz się!")
-
-odp = input("Czy Ala ma kota? : ")
-if odp.strip().casefold() == 'tak':
-    print("Odpowiedż prawidłowa")
-    punkty += 1
-else:
-    print("Doucz się!")
-
-print(f"Zdobyłeś: {punkty} pkt.")
+# punkty = 0
+# odp = input("Podaj rok Chrztu Polski: ")
+# if odp.strip().casefold() == '966':
+#     print("Odpowiedż prawidłowa")
+#     # punkty = punkty + 1
+#     punkty += 1
+# else:
+#     print("Doucz się!")
+#
+# odp = input("Podaj stolicę Polski: ")
+# if odp.strip().casefold() == 'Warszawa'.casefold():
+#     print("Odpowiedż prawidłowa")
+#     punkty += 1
+# else:
+#     print("Doucz się!")
+#
+# odp = input("Czy Ala ma kota? : ")
+# if odp.strip().casefold() == 'tak':
+#     print("Odpowiedż prawidłowa")
+#     punkty += 1
+# else:
+#     print("Doucz się!")
+#
+# print(f"Zdobyłeś: {punkty} pkt.")
 # Podaj rok Chrztu Polski: 966
 # Odpowiedż prawidłowa
 # Podaj stolicę Polski: Warszawa
 # Odpowiedż prawidłowa
 # Zdobyłeś: 2 pkt.
+
+
+# zasymulujemy system zbierania logów
+# zmienna: typ sytemu -> console, email, inny
+# console: "Stało się coś strasznego"
+# email: "System email"
+# jeśli system jest email:
+# dodąc do listy błedów tłumaczenie błędu
+# poziomy błędów: error, medium, inny
+# error -> Krytyczny
+
+lista_b = []
+alert_system = "email"
+error_level = "error"
+
+if alert_system == "console":
+    print("Stało się coś strasznego")
+elif alert_system == "email":
+    print("System email")
+    if error_level == "error":
+        lista_b.append("Krytyczny")
+    elif error_level == "medium":
+        lista_b.append("Ostrzeżenie")
+    else:
+        lista_b.append("inne")
+else:
+    print("Inny system")
+
+print(lista_b)
+# System email
+# ['Krytyczny']
