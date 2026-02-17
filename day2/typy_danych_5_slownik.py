@@ -37,6 +37,8 @@ print(dictionary)  # {'imie': ['Radek', 'Tomek', 'Magda'], 'wiek': 50}
 # wypisac Tomka
 print(dictionary['imie'])  # ['Radek', 'Tomek', 'Magda']
 print(dictionary['imie'][1])  # Tomek
+
+print(dictionary['imie'][0].lower())  # radek
 print(dictionary['imie'][::1])  # ['Radek', 'Tomek', 'Magda']
 
 dictionary = {'imie': ['Radek', 'Tomek', 'Magda'], 'wiek': 50}
@@ -55,3 +57,12 @@ print(name1.lower() == name2.lower())  # False
 
 """ Return a version of the string suitable for caseless comparisons. """
 print(name1.casefold() == name2.casefold())  # True
+
+dictionary.update({"data": "12-12-2055"})
+print(dictionary)
+# {'imie': ['Radek', 'Tomek', 'Magda'], 'wiek': 50, 'data': '12-12-2055'}
+
+# [('imie', 'Radek'), ('wiek', 50)] - lista krotek
+dict_small = {'x': 2}
+dict_small.update([("x", 3), ("z", 6)])
+print(dict_small)  # {'x': 3, 'z': 6}
