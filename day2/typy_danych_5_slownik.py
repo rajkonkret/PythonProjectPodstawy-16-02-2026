@@ -96,3 +96,6 @@ print(f"Prawidłowa odpowiedź dla: {odp} to: {pol_ang.get(odp.strip().casefold(
 # Znam takie słówka: dict_keys(['pies', 'kot', 'dach'])
 # Podaj słówko do przetłumaczenia: Pies
 # Prawidłowa odpowiedź dla:  Pies to: dog
+
+# \N{name} - Znak Unicode o podanej nazwie
+print("\N{LATIN SMALL LETTER SHARP S}")  # ß
