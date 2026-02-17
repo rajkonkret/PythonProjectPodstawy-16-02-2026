@@ -28,3 +28,8 @@ print(type(tupla_jeden))
 del tupla_jeden
 # print(tupla_jeden)  # NameError: name 'tupla_jeden' is not defined
 
+# ('Zenek', 'Marek', 'Radek', 'Ania')
+print(tupla_imiona.index("Radek"))  # index 2
+print(tupla_imiona.count("Radek"))  # występuje 1 raz
+
+print(len(tupla_imiona))  # długość 4
