@@ -63,6 +63,7 @@ if n > 3:
 if (n := len(a)) > 3:
     print(f"Długość wynosi: {n}, więcej niż 3")
 
+# ctrl / - komentarz
 # podatek = 0
 # zarobki = int(input('Podaj zarobki:'))
 #
@@ -78,3 +79,55 @@ if (n := len(a)) > 3:
 #
 # print(f"podatek wynosi: {zarobki * podatek} pln.")
 # dodać podatek 20%, dla zarobków od 10000 do 39999
+
+sum_zam = 150
+if sum_zam > 100:
+    rabat = 25
+else:
+    rabat = 0
+
+print(f"Rabat wynosi: {rabat}")  # Rabat wynosi: 25
+
+# operator warunkowy
+rabat = 25 if sum_zam > 100 else 0
+print(f"Rabat wynosi: {rabat}")  # Rabat wynosi: 25
+
+# napisac test z ...
+# trzy patania
+# punktacja
+
+# spam += 1    spam = spam + 1
+# spam -= 1    spam = spam - 1
+# spam *= 1    spam = spam * 1
+# spam /= 1    spam = spam / 1
+# spam %= 1    spam = spam % 1
+
+punkty = 0
+odp = input("Podaj rok Chrztu Polski: ")
+if odp.strip().casefold() == '966':
+    print("Odpowiedż prawidłowa")
+    # punkty = punkty + 1
+    punkty += 1
+else:
+    print("Doucz się!")
+
+odp = input("Podaj stolicę Polski: ")
+if odp.strip().casefold() == 'Warszawa'.casefold():
+    print("Odpowiedż prawidłowa")
+    punkty += 1
+else:
+    print("Doucz się!")
+
+odp = input("Czy Ala ma kota? : ")
+if odp.strip().casefold() == 'tak':
+    print("Odpowiedż prawidłowa")
+    punkty += 1
+else:
+    print("Doucz się!")
+
+print(f"Zdobyłeś: {punkty} pkt.")
+# Podaj rok Chrztu Polski: 966
+# Odpowiedż prawidłowa
+# Podaj stolicę Polski: Warszawa
+# Odpowiedż prawidłowa
+# Zdobyłeś: 2 pkt.
