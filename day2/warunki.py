@@ -12,7 +12,10 @@ if odp: print("Test")  # Test
 if odp:
     print("Test")  # Test
 
-odp = False
+# debugger - narzedzie do wykonywania kodu krok po kroku, ułatwia wyszukiwanie błedów
+# pułapka - mmiejsce gdzi ema się zatrzymać debugger
+
+# odp = False
 if odp:  # blok programu wykonywany gdy warunek True
     print("Brawo")
     # print("Brawo") IndentationError: unexpected indent
