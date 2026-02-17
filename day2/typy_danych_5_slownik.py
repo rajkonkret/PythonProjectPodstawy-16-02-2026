@@ -50,3 +50,8 @@ print(dictionary.get("Imie", "default"))  # default
 
 name1 = "GROSS"
 name2 = "groẞ"
+
+print(name1.lower() == name2.lower())  # False
+
+""" Return a version of the string suitable for caseless comparisons. """
+print(name1.casefold() == name2.casefold())  # True
