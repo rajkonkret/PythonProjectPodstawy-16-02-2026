@@ -61,3 +61,17 @@ print(name1, name2, name3)  # ['Zenek', 'Marek'] Radek Ania
 
 name1, *name2, name3 = tupla_imiona  # * worek na pozostałe dane
 print(name1, name2, name3)  # Zenek ['Marek', 'Radek'] Ania
+
+# sorted() - sortowanie, zwraca nową listę, nie zmienia oryginału
+print(sorted(tupla_imiona))  # ['Ania', 'Marek', 'Radek', 'Zenek']
+print(tupla_imiona)  # ('Zenek', 'Marek', 'Radek', 'Ania'), bez zmian
+
+sortowana = sorted(tupla_imiona)
+print(id(sortowana))  # 1517299432256
+print(id(tupla_imiona))  # 1517304926336
+# loadCos load_cos
+
+print(tupla_imiona)  # nie zostałoa zmieniona, ('Zenek', 'Marek', 'Radek', 'Ania')
+
+lista = list(tupla_imiona)
+print(lista)  # ['Zenek', 'Marek', 'Radek', 'Ania']
