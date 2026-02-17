@@ -95,3 +95,99 @@ for i in range(-10, 0):
 for i in range(10, 0, -2):  # (start, stop, krok), krok ujemny, liczy w dół
     print(i)
 
+imiona = ["Radek", "Tomek", "Agata", "Marek"]
+
+# wypisac elementy z listy jedno pod drugim
+
+for i in range(len(imiona)):
+    print(imiona[i])
+
+for o in imiona:
+    print(o)
+
+# 0 Radek
+for i in range(len(imiona)):
+    print(i, imiona[i])
+# 0 Radek
+# 1 Tomek
+# 2 Agata
+# 3 Marek
+
+for o in imiona:
+    print(imiona.index(o), o)
+# 0 Radek
+# 1 Tomek
+# 2 Agata
+# 3 Marek
+
+# enumerate() - zwraca numer i element kolekcji
+for p in enumerate(imiona):
+    print(p)
+
+# rozpokawanie krotki
+a, b = (3, 'Marek')
+print(a, b)
+
+for i, o in enumerate(imiona):
+    print(i, o)
+# 0 Radek
+# 1 Tomek
+# 2 Agata
+# 3 Marek
+
+for i, o in enumerate(imiona, start=1):
+    print(i, o)
+# 1 Radek
+# 2 Tomek
+# 3 Agata
+# 4 Marek
+
+# imiona = ["Radek", "Tomek", "Agata", "Marek"]
+imiona = ["Radek", "Tomek", "Agata", "Marek", "Magda"]
+wiek = [44, 56, 23, 38]
+
+# Radek 44
+# for p in imiona:
+#     print(p, wiek[imiona.index((p))])
+#     # IndexError: list index out of range - dla różnych długości list
+# # Radek 44
+# # Tomek 56
+# # Agata 23
+# # Marek 38
+
+# zip() - łączy kolekcje
+for i in zip(imiona, wiek):
+    print(i)
+# ('Radek', 44)
+# ('Tomek', 56)
+# ('Agata', 23)
+# ('Marek', 38)
+
+for i, w in zip(imiona, wiek):
+    print(i, w)
+# Radek 44
+# Tomek 56
+# Agata 23
+# Marek 38
+
+# 0 Radek 44
+for i in enumerate(zip(imiona, wiek)):
+    print(i)
+# (0, ('Radek', 44))
+# (1, ('Tomek', 56))
+# (2, ('Agata', 23))
+# (3, ('Marek', 38))
+a, b = (3, ('Marek', 38))
+print(a, b)  # 3 ('Marek', 38)
+c, d = ('Marek', 38)
+print(c, d)
+a, (c, d) = (3, ('Marek', 38))
+print(a, c, d)
+
+# musimy nawiasami wskazac, gdzie jest ta wewnętrzna krotka
+for i, (o, w) in enumerate(zip(imiona, wiek)):
+    print(i, o, w)
+# 0 Radek 44
+# 1 Tomek 56
+# 2 Agata 23
+# 3 Marek 38
