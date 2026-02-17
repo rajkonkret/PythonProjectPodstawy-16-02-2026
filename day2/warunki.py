@@ -39,4 +39,26 @@ if odp:
 if odp == "Radek":  # porównanie
     print("Jesteś Radek")  # Jesteś Radek
 
+odp = 0  # bool(0) -> False
+if odp:
+    print("Działa")
+else:  # w innym przypadku, wartość domyślna
+    print("Zero -> False")
+# Zero -> False
 
+a = "Radek"
+# jeśli długość tekstu wieksza niż 3 to ma wypisac:
+# Długośc wynosi: dl, więcej niż 3
+
+if len(a) > 3:
+    print(f"Długość wynosi: {len(a)}, więcej niż 3")
+# Długość wynosi: 5, więcej niż 3
+
+n = len(a)
+if n > 3:
+    print(f"Długość wynosi: {n}, więcej niż 3")
+# Długość wynosi: 5, więcej niż 3
+
+# walrus operator, operator morsa
+if (n := len(a)) > 3:
+    print(f"Długość wynosi: {n}, więcej niż 3")
