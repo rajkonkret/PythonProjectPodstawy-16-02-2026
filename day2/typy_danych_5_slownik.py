@@ -66,3 +66,33 @@ print(dictionary)
 dict_small = {'x': 2}
 dict_small.update([("x", 3), ("z", 6)])
 print(dict_small)  # {'x': 3, 'z': 6}
+
+# input() - pozwala wprowadzić dane do komputera np.:  z klawiatury
+
+# # input zwraca str
+# tekst = input("Podaj imie:")
+# print(tekst)
+# print(type(tekst))
+# # Podaj imie:Radek
+# # Radek
+#
+# # Podaj imie:123
+# # 123
+# # <class 'str'>
+
+#  napisac aplikacje kalkulator
+# a = int(input("Podaj pierwsza liczbę:"))
+# b = input("Podaj drugą liczbę:")
+# print(a + float(b))
+# Podaj pierwsza liczbę:1
+# Podaj drugą liczbę:2
+# 3.0
+
+# napisac aplikację słownik pol-ang
+pol_ang = {'pies': "dog", "kot": 'cat', "dach": "roof"}
+print("Znam takie słówka:", pol_ang.keys())
+odp = input("Podaj słówko do przetłumaczenia:")
+print(f"Prawidłowa odpowiedź dla: {odp} to: {pol_ang.get(odp.strip().casefold(), "nie ma")}")
+# Znam takie słówka: dict_keys(['pies', 'kot', 'dach'])
+# Podaj słówko do przetłumaczenia: Pies
+# Prawidłowa odpowiedź dla:  Pies to: dog
