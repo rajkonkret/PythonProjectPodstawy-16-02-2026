@@ -32,4 +32,29 @@ zbior.add(33)
 zbior.add(24)
 zbior.add(24)
 zbior.add(25)
-print(zbior) # {33, 66, 777, 11, 44, 18, 22, 55, 24, 25}
+
+print(zbior)  # {33, 66, 777, 11, 44, 18, 22, 55, 24, 25}
+
+# usuniecie eleemntu ze zbioru
+zbior.remove(55)  # wartość elementu
+print(zbior)  # {33, 66, 777, 11, 44, 18, 22, 24, 25}
+
+# ctrl f - szukanie w pliku
+# ctrl shift f - wyszukiwanie w projekcie
+
+# pop()
+print(zbior.pop())  # 33, usuniecie pierwszego elementu
+
+zmienna = zbior.pop()
+print(f"Zmienna: {zmienna}")  # Zmienna: 66
+print('Zmienna:', zmienna)  # Zmienna: 66
+
+zbior_copy = zbior.copy()
+print(zbior_copy)
+# id
+print(id(zbior))  # 1848029801024
+print(id(zbior_copy))  # 1848034961984
+
+zbior_2 = {667, 11, 44, 12.34, 18, 52, 667, 62}
+print(zbior_2)  # {18, 667, 52, 11, 44, 12.34, 62}
+print(type(zbior_2))  # <class 'set'>
