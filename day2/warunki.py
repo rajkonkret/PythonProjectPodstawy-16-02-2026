@@ -30,3 +30,13 @@ if odp:  # blok programu wykonywany gdy warunek True
 # Brawo
 
 print("Dalsza część programu")
+
+odp = "Radek"
+if odp:
+    print("Dane zostały wczytane")
+# Dane zostały wczytane
+
+if odp == "Radek":  # porównanie
+    print("Jesteś Radek")  # Jesteś Radek
+
+
