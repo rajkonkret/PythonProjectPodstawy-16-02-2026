@@ -58,3 +58,13 @@ print(id(zbior_copy))  # 1848034961984
 zbior_2 = {667, 11, 44, 12.34, 18, 52, 667, 62}
 print(zbior_2)  # {18, 667, 52, 11, 44, 12.34, 62}
 print(type(zbior_2))  # <class 'set'>
+
+# suma zbiorów, zwraca nowy zbiór
+print(zbior | zbior_2)  # {777, 11, 44, 12.34, 18, 52, 22, 24, 25, 667, 62}
+print(zbior.union(zbior_2))  # {777, 11, 44, 12.34, 18, 52, 22, 24, 25, 667, 62}
+
+# częśc wspólna
+print(zbior & zbior_2)  # {18, 11, 44}
+print(zbior.intersection(zbior_2))  # {18, 11, 44}
+
+
