@@ -12,6 +12,7 @@ if odp: print("Test")  # Test
 if odp:
     print("Test")  # Test
 
+odp = False
 if odp:  # blok programu wykonywany gdy warunek True
     print("Brawo")
     # print("Brawo") IndentationError: unexpected indent
@@ -24,3 +25,5 @@ if odp:  # blok programu wykonywany gdy warunek True
 # Brawo
 # Brawo
 # Brawo
+
+print("Dalsza część programu")
