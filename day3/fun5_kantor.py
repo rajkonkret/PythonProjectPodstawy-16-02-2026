@@ -7,10 +7,10 @@ def kantor(waluta):
     print("Otwieram kantor")
 
     def usd(kwota=0):
-        print(f"Wymieniam: {kwota} usd na: {kwota * 3.57}")
+        print(f"Wymieniam: {kwota} usd na: {kwota * 3.57} pln")
 
     def eur(kwota=0):
-        print(f"Wymieniam: {kwota} usd na: {kwota * 4.20}")
+        print(f"Wymieniam: {kwota} usd na: {kwota * 4.20} pln")
 
     if waluta == "eur":
         return eur
