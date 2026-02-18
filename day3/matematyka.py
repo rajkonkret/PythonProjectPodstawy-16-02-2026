@@ -1,4 +1,5 @@
 import math
+from itertools import zip_longest
 
 print(math.pi)  # 3.141592653589793
 print(len(str(math.pi)))  # 3.141592653589793
@@ -27,3 +28,32 @@ for a, s in zip(angles, sin_values):
 # sin(45) = 0.707107
 # sin(60) = 0.866025
 # sin(90) = 1.000000
+
+imiona = ["Radek", "Tomek", "Agata", "Marek", "Magda"]
+wiek = [44, 56, 23, 38]
+
+zipped = zip_longest(imiona, wiek, fillvalue=None)
+print(zipped)  # <itertools.zip_longest object at 0x0000020D9083D030>
+
+# for item in zipped:
+#     print(item)
+# ('Radek', 44)
+# ('Tomek', 56)
+# ('Agata', 23)
+# ('Marek', 38)
+# ('Magda', None)
+# iterator nie trzyma danych - zwykle można skorzystać tylko raz
+
+print(40 * "-")
+# for o, w in zipped:
+#     print(o, w)
+# ----------------------------------------
+# Radek 44
+# Tomek 56
+# Agata 23
+# Marek 38
+# Magda None
+
+# gdy wrzucimy dane do listy , możemy korzystać z nich wielokrotnie
+lista = list(zipped)
+print(lista)  # [('Radek', 44), ('Tomek', 56), ('Agata', 23), ('Marek', 38), ('Magda', None)]
