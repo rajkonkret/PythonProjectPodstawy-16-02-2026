@@ -61,3 +61,17 @@ for p in product:
     print(f"""
 Price for sku: {p['sku']}
 is now: {p['price']:.2f}""")
+# Price for sku: 1
+# is now: 160.00
+#
+# Price for sku: 2
+# is now: 80.00
+#
+# Price for sku: 4
+# is now: 960.00
+#
+# Price for sku: 5
+# is now: 5760.00
+#
+# Price for sku: 6
+# is now: 159.99
