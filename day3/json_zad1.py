@@ -39,3 +39,15 @@ with open('nasze_dane.json', "w") as f:
 #     "czy_pali": null,
 #     "name": "Radek"
 # }
+
+# wczytanie danych do słownika
+with open("nasze_dane.json", "r") as file:
+    data = json.load(file)
+
+print(data)  # {'age': 40, 'czy_pali': None, 'name': 'Radek'}
+print(type(data))  # <class 'dict'>
+
+print("Imię pacjenta:", data['name'])
+print("Wiek pacjenta:", data['age'])
+# Imię pacjenta: Radek
+# Wiek pacjenta: 40
