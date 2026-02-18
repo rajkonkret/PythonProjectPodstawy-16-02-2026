@@ -4,13 +4,45 @@
 # przekazenie kwoty do funkcji usd i eur
 
 def kantor(waluta):
-    def usd():
-        pass
+    print("Otwieram kantor")
 
-    def eur():
-        pass
+    def usd(kwota=0):
+        print(f"Wymieniam: {kwota} usd na: {kwota * 3.57}")
+
+    def eur(kwota=0):
+        print(f"Wymieniam: {kwota} usd na: {kwota * 4.20}")
 
     if waluta == "eur":
-        pass
+        return eur
     else:
-        pass
+        return usd
+
+
+kantor_usd = kantor("usd")
+kantor_eur = kantor("eur")
+
+kantor_usd()
+kantor_usd()
+kantor_usd()
+kantor_usd()
+
+kantor_eur()
+kantor_eur()
+kantor_eur()
+kantor_eur()
+kantor_eur()
+
+kantor_eur(500)
+kantor_usd(345)
+# Otwieram kantor
+# Wymieniam: 0 usd na: 0.0
+# Wymieniam: 0 usd na: 0.0
+# Wymieniam: 0 usd na: 0.0
+# Wymieniam: 0 usd na: 0.0
+# Wymieniam: 0 usd na: 0.0
+# Wymieniam: 0 usd na: 0.0
+# Wymieniam: 0 usd na: 0.0
+# Wymieniam: 0 usd na: 0.0
+# Wymieniam: 0 usd na: 0.0
+# Wymieniam: 500 usd na: 2100.0
+# Wymieniam: 345 usd na: 1231.6499999999999
