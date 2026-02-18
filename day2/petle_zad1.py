@@ -184,6 +184,8 @@ print(c, d)
 a, (c, d) = (3, ('Marek', 38))
 print(a, c, d)
 
+# imiona = ["Radek", "Tomek", "Agata", "Marek", "Magda"]
+# wiek = [44, 56, 23, 38]
 # musimy nawiasami wskazac, gdzie jest ta wewnętrzna krotka
 for i, (o, w) in enumerate(zip(imiona, wiek)):
     print(i, o, w)
