@@ -120,3 +120,15 @@ spam -= 1    spam = spam - 1
 spam *= 1    spam = spam * 1
 spam /= 1    spam = spam / 1
 spam %= 1    spam = spam % 1
+
+# ========= ===============================================================
+#     Character Meaning
+#     --------- ---------------------------------------------------------------
+#     'r'       open for reading (default)
+#     'w'       open for writing, truncating the file first
+#     'x'       create a new file and open it for writing
+#     'a'       open for writing, appending to the end of the file if it exists
+#     'b'       binary mode
+#     't'       text mode (default)
+#     '+'       open a disk file for updating (reading and writing)
+#     ========= ===============================================================
