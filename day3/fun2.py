@@ -31,3 +31,13 @@ print(odejmij(c=1, a=2))  # 1
 
 wynik = odejmij(6, 8, 24)
 print("Wynik:", wynik)  # Wynik: -26
+
+
+def oblicz_vat(kwota, vat=23):
+    return kwota * (100 + vat) / 100
+
+
+print(oblicz_vat(1000))  # 1230.0
+print(oblicz_vat(1000, 8))  # 1080.0
+print(oblicz_vat(vat=15, kwota=1000))  # 1150.0
+
