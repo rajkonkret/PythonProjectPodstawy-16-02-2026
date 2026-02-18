@@ -11,7 +11,8 @@ fields = ['name', 'branch', 'year', 'cgpa']
 
 filename = "records.csv"
 
-with open(filename, "w") as csv_f:
+# newline="" - obejście problemu pustych linii
+with open(filename, "w", newline="") as csv_f:
     csvwriter = csv.writer(csv_f)
     csvwriter.writerow(fields)
     csvwriter.writerow(row)
