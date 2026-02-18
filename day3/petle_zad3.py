@@ -10,3 +10,11 @@ while True:
     print("Komunikat 2 !!")
     if licznik > 10:
         break  # przerwanie pętli
+
+print(50 * "-")
+print(licznik)
+
+licznik = 0
+while licznik < 10:
+    licznik += 1
+    print("Komunikat 3 !!!")
