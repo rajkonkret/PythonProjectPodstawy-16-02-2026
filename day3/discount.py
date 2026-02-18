@@ -40,3 +40,12 @@ print(type(object_data))
 #                 milliseconds=0, minutes=0, hours=0, weeks=0
 tomorrow = today + timedelta(days=1)
 print("Jutrzejsza data:", tomorrow)  # Jutrzejsza data: 2026-02-19
+
+product = [
+    {"sku": 1, "exp_date": today, "price": 200},
+    {"sku": 2, "exp_date": today, "price": 100},
+    {"sku": 3, "exp_date": tomorrow, "price": 900},
+    {"sku": 4, "exp_date": today, "price": 1200},
+    {"sku": 5, "exp_date": today, "price": 7200},
+    {"sku": 6, "exp_date": today, "price": 199.99},
+]
