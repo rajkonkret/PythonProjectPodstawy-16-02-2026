@@ -34,3 +34,9 @@ print(object_data)
 print(type(object_data))
 # 2026-02-18 00:00:00
 # <class 'datetime.datetime'>
+
+# tomorrow = today + 1  # TypeError: unsupported operand type(s) for +: 'datetime.date' and 'int'
+#  days=0, seconds=0, microseconds=0,
+#                 milliseconds=0, minutes=0, hours=0, weeks=0
+tomorrow = today + timedelta(days=1)
+print("Jutrzejsza data:", tomorrow)  # Jutrzejsza data: 2026-02-19
