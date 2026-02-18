@@ -23,3 +23,16 @@ with open("test.log", "w") as f:
     f.write('Jeszcze jedno\n')
 
 # f.write("") # ValueError: I/O operation on closed file. plik został zamknięty przez context manager
+
+# x - tworzy nowy plik
+# x - jesli plik istnieje dostaniemy błąd
+# # FileExistsError: [Errno 17] File exists: 'test.log'
+# with open("test.log", "x") as f:
+#     f.write('Powitanie\n')
+#     f.write('Jeszcze jedno\n')
+
+with open("test.log", "w") as f:
+    f.write('PArametr 1\n')
+    f.write('PArametr 2\n')
+    f.write('PArametr 3\n')
+    f.write('PArametr 4\n')
