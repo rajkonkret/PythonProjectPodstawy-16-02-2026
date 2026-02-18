@@ -36,3 +36,22 @@ with open("test.log", "w") as f:
     f.write('PArametr 2\n')
     f.write('PArametr 3\n')
     f.write('PArametr 4\n')
+
+# \n nowa linia
+# a - dodanie na końcu pliku
+with open("test.log", "a") as f:
+    f.write('Dodane\n')
+    f.write('Dodane\n')
+    f.write('Dodane jescze jedno\n')
+
+with open("test.log", "r") as file:
+    lines = file.read()
+
+print(lines)
+# PArametr 1
+# PArametr 2
+# PArametr 3
+# PArametr 4
+# Dodane
+# Dodane
+# Dodane jescze jedno
