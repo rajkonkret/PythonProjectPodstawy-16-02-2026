@@ -1,6 +1,6 @@
 import csv
 
-filename = "records.csv"
+# filename = "records.csv"
 filename = "records_discount.csv"
 
 fields = []
@@ -16,7 +16,7 @@ with open(filename, "r") as csv_f:
     # csvreader = csv.reader(csv_f, delimiter=";")
     csvreader = csv.reader(csv_f, delimiter=dialect.delimiter)
 
-    print(csvreader)  # <_csv.reader object at 0x000002E1861ABAC0>
+    print(csvreader)  # <_csv.reader object at 0x000002E1861ABAC0> - iterator
 
     # StopIteration - wyczerpały się dane, próba odczytu poza zakresem
     fileds = next(csvreader)  # odczyt pierwszego wiersza z danych, ustawienie odczytu na następny
