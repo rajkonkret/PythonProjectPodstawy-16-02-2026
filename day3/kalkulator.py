@@ -38,3 +38,10 @@ while True:
         print("Bład:", e)
     finally:
         print("Obliczenia wykonane")
+
+print(50 * "-")
+wyr = input("Podaj wyrażenie do obliczenia:")
+print(eval(wyr))
+# --------------------------------------------------
+# Podaj wyrażenie do obliczenia:>? 5*4
+# 20
