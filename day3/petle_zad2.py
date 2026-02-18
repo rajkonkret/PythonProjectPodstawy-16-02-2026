@@ -47,3 +47,17 @@ print("Radek")  # imie<====>Radek | nazwisko<====>Kowalski | Radek
 print("Następna linia")
 # imie<====>Radek | nazwisko<====>Kowalski | Radek
 # Następna linia
+
+pol_ang = {'pies': "dog", "kot": 'cat', "dach": "roof"}
+# zrobic słownik ang_pol
+
+ang_pol = {}
+for k, v in pol_ang.items():
+    ang_pol[v] = k  # ang_pol['dog'] = 'pies'
+
+print(ang_pol)  # {'dog': 'pies', 'cat': 'kot', 'roof': 'dach'}
+
+# dict comprehensions
+# {key : value}
+print({v: k for k, v in pol_ang.items()})
+# {'dog': 'pies', 'cat': 'kot', 'roof': 'dach'}
