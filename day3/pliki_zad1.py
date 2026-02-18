@@ -43,6 +43,7 @@ with open("test.log", "a") as f:
     f.write('Dodane\n')
     f.write('Dodane\n')
     f.write('Dodane jescze jedno\n')
+    f.write('Dodśane jescze jedno\n')
 
 with open("test.log", "r") as file:
     lines = file.read()
