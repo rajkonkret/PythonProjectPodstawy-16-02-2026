@@ -41,3 +41,12 @@ print(oblicz_vat(1000))  # 1230.0
 print(oblicz_vat(1000, 8))  # 1080.0
 print(oblicz_vat(vat=15, kwota=1000))  # 1150.0
 
+zm = oblicz_vat(1000)
+print(zm)  # 1230.0 -> float
+print(type(zm))  # <class 'float'>
+
+if zm == 1230:
+    print("OK")  # OK
+
+print(dodaj2(5, 7) + odejmij(5, 89))
+# -72
