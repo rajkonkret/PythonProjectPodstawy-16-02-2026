@@ -21,3 +21,14 @@ print(dane)
 print(type(dane))  # <class 'dict'>
 
 # wypisac wszystkie klucze ze słownika
+print(dane.keys())  # dict_keys(['description', 'example', 'id', 'level', 'term'])
+
+for i in dane:
+    print(i)
+# description
+# example
+# id
+# level
+# term
+
+print(dane['term'])  # Co to jest „name mangling” w Pythonie?
