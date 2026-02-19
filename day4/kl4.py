@@ -31,6 +31,11 @@ class Kura(Ptak):
 
 
 # klasa Orzel -> Ptak
+class Orzel(Ptak):
+    """
+    Klasa Orzeł dziedziczy po kalsie Ptak
+    """
+
 
 or1 = Ptak("Orzeł", 50)
 print(or1)  # <__main__.Ptak object at 0x105ffa270>
@@ -41,3 +46,6 @@ kur1.latam()  # Tu Kura Lecę z szybkością: 0 km/h
 
 kur2 = Kura("Kura zielononóżka")
 kur2.latam()  # Tu Kura zielononóżka Ja nie latam
+
+or2 = Orzel("Orzeł Bielik", 55)
+or2.latam()  # Tu Orzeł Bielik Lecę z szybkością: 55 km/h
