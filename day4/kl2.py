@@ -62,6 +62,6 @@ cz2.wypisz_wiek()
 # Nazywam się: Anna
 # Mam 45 lat.
 
-print(cz1) # <__main__.Human object at 0x10088e270>
+print(cz1)  # <__main__.Human object at 0x10088e270>
 # po nadpisaniu __str__ wynik:
 # Radek, 45, 189
