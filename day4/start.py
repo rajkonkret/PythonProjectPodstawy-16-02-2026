@@ -7,11 +7,15 @@
 
 import pakiet
 
+print(50 * "-")
 # pakiet.powitanie() # AttributeError: module 'pakiet' has no attribute 'powitanie'
+# po dodaniu w __info__.py metoda info() działa
+pakiet.info() # Wersja: v1.79.01.234
 
 from pakiet import fun
 
 fun.powitanie()  # Jestem pakietem
 
 import pakiet.fun as pk  # alias
-pk.powitanie() # Jestem pakietem
+
+pk.powitanie()  # Jestem pakietem
