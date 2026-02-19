@@ -16,6 +16,9 @@ class Ptak:
     def latam(self):
         print("Tu", self.gatunek, "Lecę z szybkością:", self.szybkosc, "km/h")
 
+    def wydaj_odglos(self):
+        pass
+
 
 class Kura(Ptak):
     """
@@ -29,12 +32,18 @@ class Kura(Ptak):
     def latam(self):
         print("Tu", self.gatunek, "Ja nie latam")
 
+    def wydaj_odglos(self):
+        print("ko ko ko ko ko")
+
 
 # klasa Orzel -> Ptak
 class Orzel(Ptak):
     """
     Klasa Orzeł dziedziczy po kalsie Ptak
     """
+
+    def wydaj_odglos(self):
+        print("Kier kir kier ki kir")
 
 
 or1 = Ptak("Orzeł", 50)
