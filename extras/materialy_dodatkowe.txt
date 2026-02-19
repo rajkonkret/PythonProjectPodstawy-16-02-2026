@@ -132,3 +132,5 @@ spam %= 1    spam = spam % 1
 #     't'       text mode (default)
 #     '+'       open a disk file for updating (reading and writing)
 #     ========= ===============================================================
+
+https://github.com/public-apis/public-apis
