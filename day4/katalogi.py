@@ -24,5 +24,6 @@ path_b.mkdir(parents=True)  # parents=True - tworzy wszystkie potrzebne katalogi
 # katalog C zostanie utworzony bo już istnieje nadrzędny katalog A
 path_c.mkdir()
 
-for i in ('ex1.txt', 'ex2.txt', 'ex3.txt'):
-    pass
+for filename in ('ex1.txt', 'ex2.txt', 'ex3.txt'):
+    with open(path_b / filename, "w", encoding='utf=8') as stream:
+        stream.write(f"Jakaś treść pliku {filename}")
