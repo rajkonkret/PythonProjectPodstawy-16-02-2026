@@ -65,3 +65,16 @@ car.licznik()  # Prędkość wynosi: -10 km/h -> Prędkość wynosi: 0 km/h
 # Prędkość wynosi: 0 km/h
 # Zmiana biegu
 # Prędkość wynosi: 0 km/h
+
+print(50 * "-")
+car.gaz()
+car.gaz()
+car.gaz()
+car.gaz()
+car.gaz()
+car.__predkosc = 0  # nowe pole w klasie
+car.licznik()  # wypisuje z pola prywatnego klasy inne niż to wyżej
+# --------------------------------------------------
+# Prędkość wynosi: 50 km/h
+
+# Enkapsulacja - hermetyzowanie pól i wystawianie metod do odczytu i zapisu ich (gettery, settery)
