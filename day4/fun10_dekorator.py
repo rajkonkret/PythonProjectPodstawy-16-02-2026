@@ -23,6 +23,23 @@ def hej():
 
 hej()
 
+
 # po dodaniu dekoratora:
 # Dodatkowe działanie
 # Hej!!!
+
+def color_decorator(fun):
+    def wrapper():
+        result = fun()
+        return Fore.RED + result + Style.RESET_ALL
+
+    return wrapper
+
+
+@color_decorator
+def napis():
+    return "HELLO WORLD"
+
+
+print(napis())
+print("\033[35mHello\033[0m")
