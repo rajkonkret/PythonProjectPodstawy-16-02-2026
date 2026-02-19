@@ -24,6 +24,43 @@ path_b.mkdir(parents=True)  # parents=True - tworzy wszystkie potrzebne katalogi
 # katalog C zostanie utworzony bo już istnieje nadrzędny katalog A
 path_c.mkdir()
 
+# utworzenie plików w katalogu path_b
 for filename in ('ex1.txt', 'ex2.txt', 'ex3.txt'):
     with open(path_b / filename, "w", encoding='utf=8') as stream:
         stream.write(f"Jakaś treść pliku {filename}")
+
+# przeniesienie plików do innego katalogu
+# stworzył katalog D, usunął B
+shutil.move(path_b, path_d)
+
+# kopiowanie pliku
+shutil.copy(path_d / 'ex1.txt', path_c / 'ex1.txt')
+
+# zmiana nazwy pliku
+ex1 = path_c / 'ex1.txt'
+ex1.rename(ex1.parent / 'ex1renamed.log')
+
+print(base_path.absolute())  # scieżka do katalogu
+# /Volumes/T9/zrepo/PythonProjectPodstawy-16-02-2026/day4/ops_example
+
+print(base_path.name)  # ops_example - katalog głowny drzewa
+
+# scieżka do katalogu nadrzędnego
+print(base_path.parent.absolute())
+# /Volumes/T9/zrepo/PythonProjectPodstawy-16-02-2026/day4
+
+print(40 * " -")
+print(base_path.suffix)
+print(ex1.suffix)  # .txt
+
+print(base_path.parts)  # ('ops_example',)
+
+print(base_path2.parts)  # ('ops_example', 'D')
+
+path_abs = "/Volumes/T9/zrepo/PythonProjectPodstawy-16-02-2026/day4/ops_example/A/C/ex1renamed.log"
+with open(path_abs, "r") as f:
+    lines = f.read()
+print(lines)  # Jakaś treść pliku ex1.txt
+
+# "C:\\BotPython\\2025-05-25 zajecia\\ops_example" - nalezy dodac \
+# r"C:\BotPython\2025-05-25 zajecia\ops_example" -> r - raw string
