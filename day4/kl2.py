@@ -35,6 +35,10 @@ class Human:
         else:
             print("Ruszył-am w drogę")
 
+    # metoda opisowa
+    def __str__(self):
+        return f"{self.imie}, {self.wiek}, {self.wzrost}"
+
 
 # cz1 = Human() # TypeError: Human.__init__() missing 3 required positional arguments: 'imie', 'wiek', and 'wzrost'
 cz1 = Human("Radek", 45, 189, "m")
@@ -50,3 +54,14 @@ cz1.ruszaj()
 
 cz1.wypisz_wiek()  # Mam 45 lat.
 cz1.wypisz_wzrost()  # Mam 189 cm wzrostu.
+
+cz2 = Human("Anna", 45, 170)
+cz2.powitanie()
+cz2.wypisz_wiek()
+
+# Nazywam się: Anna
+# Mam 45 lat.
+
+print(cz1) # <__main__.Human object at 0x10088e270>
+# po nadpisaniu __str__ wynik:
+# Radek, 45, 189
