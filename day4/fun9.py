@@ -67,3 +67,30 @@ print(f"Zastosowanie map(): {list(map(lambda x: x * 6, lista))}")
 # Zastosowanie map(): [4, 8, 56, 96, 200, 268, 320, 400, 800, 2000]
 # Zastosowanie map(): [5, 10, 70, 120, 250, 335, 400, 500, 1000, 2500]
 # Zastosowanie map(): [6, 12, 84, 144, 300, 402, 480, 600, 1200, 3000]
+
+# filtrowanie danych
+l4 = []
+for i in lista:
+    if i < 3:
+        l4.append(i)
+
+print(l4)  # [1, 2]
+
+# filter() - zwraca eleemnty spełniające warunek
+print(f"Zastosowanie filter(): {list(filter(lambda x: x < 3, lista))}")  # Zastosowanie filter(): [1, 2]
+# x > 3 i x < 100
+print(f"Zastosowanie filter(): {list(filter(lambda x: x < 50, lista))}")
+print(f"Zastosowanie filter(): {list(filter(lambda x: x > 25, lista))}")
+print(f"Zastosowanie filter(): {list(filter(lambda x: x < 150, lista))}")
+# Zastosowanie filter(): [1, 2, 14, 24]
+# Zastosowanie filter(): [50, 67, 80, 100, 200, 500]
+# Zastosowanie filter(): [1, 2, 14, 24, 50, 67, 80, 100]
+
+print(f"Zastosowanie filter(): {list(filter(lambda x: x > 3 and x < 100, lista))}")
+print(f"Zastosowanie filter(): {list(filter(lambda x: 3 < x < 100, lista))}")
+# Zastosowanie filter(): [14, 24, 50, 67, 80]
+# Zastosowanie filter(): [14, 24, 50, 67, 80]
+
+# zamiana filter na map
+print(f"Zastosowanie filter(): {list(map(lambda x: 3 < x < 100, lista))}")
+# Zastosowanie filter(): [False, False, True, True, True, True, True, False, False, False]
