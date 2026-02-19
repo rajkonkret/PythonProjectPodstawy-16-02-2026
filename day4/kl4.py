@@ -30,9 +30,14 @@ class Kura(Ptak):
         print("Tu", self.gatunek, "Ja nie latam")
 
 
+# klasa Orzel -> Ptak
+
 or1 = Ptak("Orzeł", 50)
 print(or1)  # <__main__.Ptak object at 0x105ffa270>
 or1.latam()  # Tu Orzeł Lecę z szybkością: 50 km/h
 
 kur1 = Ptak("Kura", 0)
 kur1.latam()  # Tu Kura Lecę z szybkością: 0 km/h
+
+kur2 = Kura("Kura zielononóżka")
+kur2.latam()  # Tu Kura zielononóżka Ja nie latam
