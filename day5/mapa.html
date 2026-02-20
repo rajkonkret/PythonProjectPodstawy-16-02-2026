@@ -17,7 +17,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_a6e0873d9070a5a3a80116a467d7182b {
+                #map_178b5e9f97482a32b6a5bd089c931bdf {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -54,14 +54,14 @@
 <body>
     
     
-            <div class="folium-map" id="map_a6e0873d9070a5a3a80116a467d7182b" ></div>
+            <div class="folium-map" id="map_178b5e9f97482a32b6a5bd089c931bdf" ></div>
         
 </body>
 <script>
     
     
-            var map_a6e0873d9070a5a3a80116a467d7182b = L.map(
-                "map_a6e0873d9070a5a3a80116a467d7182b",
+            var map_178b5e9f97482a32b6a5bd089c931bdf = L.map(
+                "map_178b5e9f97482a32b6a5bd089c931bdf",
                 {
                     center: [52.2297, 21.0122],
                     crs: L.CRS.EPSG3857,
@@ -78,7 +78,7 @@
 
         
     
-            var tile_layer_0478e8eabe7d06edf6a99ddd5cad37b1 = L.tileLayer(
+            var tile_layer_ee7aa3de80d39db7062d7ba6e9677096 = L.tileLayer(
                 "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {
   "minZoom": 0,
@@ -95,31 +95,37 @@
             );
         
     
-            tile_layer_0478e8eabe7d06edf6a99ddd5cad37b1.addTo(map_a6e0873d9070a5a3a80116a467d7182b);
+            tile_layer_ee7aa3de80d39db7062d7ba6e9677096.addTo(map_178b5e9f97482a32b6a5bd089c931bdf);
         
     
-            var marker_1c764c86998e05735f76043111baa3c1 = L.marker(
+            var marker_19ddc9e94afe4cd9d679818d511f492c = L.marker(
                 [52.2297, 21.0122],
                 {
 }
-            ).addTo(map_a6e0873d9070a5a3a80116a467d7182b);
+            ).addTo(map_178b5e9f97482a32b6a5bd089c931bdf);
         
     
-        var popup_0c9e17983a064b3b4077913d5eb83704 = L.popup({
+        var popup_01e00b47305e9ac26dac85e1b241e565 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_80cd81b1b3cd823098be7bfdaeeb76d6 = $(`<div id="html_80cd81b1b3cd823098be7bfdaeeb76d6" style="width: 100.0%; height: 100.0%;">Warszawa</div>`)[0];
-                popup_0c9e17983a064b3b4077913d5eb83704.setContent(html_80cd81b1b3cd823098be7bfdaeeb76d6);
+                var html_8930ebfd738225f8d3107f3ac03fc6b0 = $(`<div id="html_8930ebfd738225f8d3107f3ac03fc6b0" style="width: 100.0%; height: 100.0%;">Warszawa</div>`)[0];
+                popup_01e00b47305e9ac26dac85e1b241e565.setContent(html_8930ebfd738225f8d3107f3ac03fc6b0);
             
         
 
-        marker_1c764c86998e05735f76043111baa3c1.bindPopup(popup_0c9e17983a064b3b4077913d5eb83704)
+        marker_19ddc9e94afe4cd9d679818d511f492c.bindPopup(popup_01e00b47305e9ac26dac85e1b241e565)
         ;
 
         
     
+    
+            var poly_line_5cdd1555a90c43a752065d7773b07fce = L.polyline(
+                [[52.2297, 21.0122], [52.235, 21.045], [52.242, 21.073], [52.249, 21.105]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_178b5e9f97482a32b6a5bd089c931bdf);
+        
 </script>
 </html>
