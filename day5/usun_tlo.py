@@ -14,7 +14,7 @@ with open(input_path, "rb") as f:
 # print(input_data)
 
 output_data = remove(input_data)
-print(output_data)
+# print(output_data)
 
 with open(outpu_path, 'wb') as f:
     f.write(output_data)
