@@ -38,5 +38,14 @@ session = Session()
 
 # dodawanie rekordu
 new_user = User(name="Jan", age=30)
-session.add(new_user)
+session.add(new_user) # INSERT INTO users (name, age) VALUES (?, ?)
 session.commit()
+
+# odczyt z bazy
+# SELECT users.id AS users_id, users.name AS users_name, users.age AS users_age
+# FROM users
+users = session.query(User).all()
+for user in users:
+    print(f"User: {user.id}, {user.name}, {user.age}")
+# User: 1, Jan, 30
+# User: 2, Jan, 30
