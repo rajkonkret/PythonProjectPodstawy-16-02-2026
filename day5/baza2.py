@@ -33,13 +33,22 @@ try:
 
     select = "SELECT * FROM developers;"
     for row in c.execute(select):
-        print(row) # (1, 'Radek', 'raj@raj.pl', 10000.0)
+        print(row)  # (1, 'Radek', 'raj@raj.pl', 10000.0)
 
     update = """
     UPDATE developers SET salary=11000 WHERE id=1;
     """
     c.execute(update)
     conn.commit()
+
+    delete = """
+    DELETE FROM developers WHERE id=1;
+    """
+    c.execute(delete)
+    conn.commit()
+    # Baza danych została podłaczona
+    # (2, 'Radek', 'raj1@raj.pl', 8000.0)
+    # Połączenie zostało zamknięte
 
 except sqlite3.Error as e:
     print("Bład podłaczenia bazy danych:", e)
