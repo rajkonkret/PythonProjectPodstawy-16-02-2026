@@ -10,6 +10,21 @@ try:
     conn = sqlite3.connect("baza_danych.db")
     c = conn.cursor()
     print("Baza danych została podłaczona")
+
+    query = """
+    CREATE TABLE IF NOT EXISTS developers (
+    id INTEGER PRIMARY KEY,
+    name TEXT NOT NULL,
+    email TEXT NOT NULL UNIQUE,
+    salary REAL NOT NULL
+    );
+    """
+    c.execute(query)
+    conn.commit()
+
+    # insert
+
+
 except sqlite3.Error as e:
     print("Bład podłaczenia bazy danych:", e)
 finally:
@@ -18,3 +33,5 @@ finally:
         print("Połączenie zostało zamknięte")
 # pgadmin, dbeaver, https://sqlitebrowser.org/, TablePlus
 # SimpleSqliteBrowser
+# Baza danych została podłaczona
+# Połączenie zostało zamknięte
