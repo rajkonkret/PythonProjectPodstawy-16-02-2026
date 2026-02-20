@@ -15,7 +15,7 @@ engine = create_engine("sqlite:///test.db", echo=True)
 Base = declarative_base()
 
 
-# model, encja - kalsa odwzororwująca tabelę w bazie danych
+# model, encja - klasa odwzororwująca tabelę w bazie danych
 class User(Base):
     __tablename__ = "users"
     id = Column(Integer, primary_key=True)
