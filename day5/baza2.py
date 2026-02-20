@@ -27,10 +27,19 @@ try:
     # c.execute(insert) # komentowane by nie wpisywać do bazy tych samych danych
     # conn.commit()
 
+    insert = "INSERT INTO developers (id,name,email,salary) VALUES (2,'Radek','raj1@raj.pl', 8000);"
+    # c.execute(insert)
+    # conn.commit()
+
     select = "SELECT * FROM developers;"
     for row in c.execute(select):
         print(row) # (1, 'Radek', 'raj@raj.pl', 10000.0)
 
+    update = """
+    UPDATE developers SET salary=11000 WHERE id=1;
+    """
+    c.execute(update)
+    conn.commit()
 
 except sqlite3.Error as e:
     print("Bład podłaczenia bazy danych:", e)
